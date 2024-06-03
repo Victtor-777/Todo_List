@@ -10,18 +10,7 @@ export interface ITask {
 }
 
 function App() {
-  const [tasks, setTasks] = useState<ITask[]>([
-    {
-      id: "01",
-      description: "Tarefa 01 lorem sadlasda dsadasdas",
-      isCompleted: true,
-    },
-    {
-      id: "02",
-      description: "Tarefa 02 lorem sadlasda dsadasdas",
-      isCompleted: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState<ITask[]>([]);
 
   function addTask(taskDescription: string) {
     setTasks([
@@ -34,10 +23,15 @@ function App() {
     ]);
   }
 
+  function deleteTask(taskId: string) {
+    const filterTasks = tasks.filter((task) => task.id !== taskId);
+    setTasks(filterTasks);
+  }
+
   return (
     <>
       <Header onAddTask={addTask} />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTask} />
     </>
   );
 }
