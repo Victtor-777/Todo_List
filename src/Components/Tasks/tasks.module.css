@@ -48,3 +48,25 @@
   flex-direction: column;
   gap: 0.75rem;
 }
+
+.tasks_void {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  color: var(--gray-300);
+}
+
+.tasks_void svg {
+  margin-bottom: 1rem;
+}
+
+.tasks_void span {
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.tasks_void p {
+  font-weight: 400;
+  line-height: 140%;
+}

@@ -1,3 +1,4 @@
+import { ClipboardText } from "phosphor-react";
 import { ITask } from "../../App";
 import { Task } from "../Task";
 import styles from "./tasks.module.css";
@@ -37,6 +38,14 @@ export function Tasks({ tasks, onDelete, onChecked }: PropsTasks) {
             task={task}
           />
         ))}
+
+        {tasks.length <= 0 && (
+          <section className={styles.tasks_void}>
+            <ClipboardText size={56} />
+            <span>Você ainda não tem tarefas cadastradas </span>
+            <p>Crie tarefas e organize seus itens a fazer</p>
+          </section>
+        )}
       </section>
     </div>
   );
