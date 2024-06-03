@@ -16,7 +16,7 @@ export function Header() {
         <input placeholder="Adicione uma nova tarefa" type="text" />
         <button>
           Criar
-          <PlusCircle size={20} />
+          <PlusCircle weight="bold" size={20} />
         </button>
       </form>
     </div>

@@ -1,0 +1,28 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 0.75rem;
+
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  line-height: 140%;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-400);
+  background: var(--gray-500);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.task svg {
+  cursor: pointer;
+}
+
+.task_delete {
+  color: var(--gray-300);
+}
+
+.task_delete:hover {
+  color: var(--danger);
+}

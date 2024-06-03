@@ -1,0 +1,44 @@
+.tasks_container {
+  margin: 5.75rem auto 0;
+  max-width: 46rem;
+  padding: 0 1rem;
+}
+
+.tasks_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.tasks_create,
+.tasks_finish {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tasks_create span,
+.tasks_finish span {
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.tasks_create h3,
+.tasks_finish h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.tasks_create h3 {
+  color: var(--blue);
+}
+
+.tasks_finish h3 {
+  color: var(--purple);
+}
