@@ -1,7 +1,12 @@
+import { ITask } from "../../App";
 import { Task } from "../Task";
 import styles from "./tasks.module.css";
 
-export function Tasks() {
+interface PropsTasks {
+  tasks: ITask[];
+}
+
+export function Tasks({ tasks }: PropsTasks) {
   return (
     <div className={styles.tasks_container}>
       <header className={styles.tasks_header}>
@@ -16,7 +21,9 @@ export function Tasks() {
         </div>
       </header>
 
-      <Task />
+      {tasks.map((task) => (
+        <Task key={task.id} task={task} />
+      ))}
     </div>
   );
 }
