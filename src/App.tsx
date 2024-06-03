@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "./Components/Header";
 import { Tasks } from "./Components/Tasks";
+import { v4 as uuidv4 } from "uuid";
 
 export interface ITask {
   id: string;
@@ -22,13 +23,20 @@ function App() {
     },
   ]);
 
-  function addTask() {
-    event?.preventDefault();
+  function addTask(taskDescription: string) {
+    setTasks([
+      ...tasks,
+      {
+        id: uuidv4(),
+        description: taskDescription,
+        isCompleted: false,
+      },
+    ]);
   }
 
   return (
     <>
-      <Header />
+      <Header onAddTask={addTask} />
       <Tasks tasks={tasks} />
     </>
   );
