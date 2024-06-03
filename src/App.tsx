@@ -15,7 +15,16 @@ function App() {
       description: "Tarefa 01 lorem sadlasda dsadasdas",
       isCompleted: true,
     },
+    {
+      id: "02",
+      description: "Tarefa 02 lorem sadlasda dsadasdas",
+      isCompleted: false,
+    },
   ]);
+
+  function addTask() {
+    event?.preventDefault();
+  }
 
   return (
     <>

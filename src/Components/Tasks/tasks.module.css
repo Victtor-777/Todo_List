@@ -42,3 +42,9 @@
 .tasks_finish h3 {
   color: var(--purple);
 }
+
+.tasks_items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

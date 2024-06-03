@@ -72,7 +72,7 @@
 
   border: none;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .header_form button:hover {
