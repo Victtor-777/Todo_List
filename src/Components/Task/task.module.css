@@ -19,9 +19,12 @@
   flex: 1;
 }
 
-.task svg {
+.task button {
   align-self: flex-start;
   cursor: pointer;
+  background: none;
+  border: none;
+  line-height: 0;
 }
 
 .task_delete {
@@ -30,4 +33,9 @@
 
 .task_delete:hover {
   color: var(--danger);
+}
+
+.task_completed {
+  text-decoration: line-through;
+  color: var(--gray-300);
 }
