@@ -43,7 +43,7 @@ export function Tasks({ tasks, onDelete, onChecked }: PropsTasks) {
           <section className={styles.tasks_void}>
             <ClipboardText size={56} />
             <span>Você ainda não tem tarefas cadastradas </span>
-            <p>Crie tarefas e organize seus itens a fazer</p>
+            <p>Crie tarefas e organize seus itens a fazer.</p>
           </section>
         )}
       </section>

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "./Components/Header";
 import { Tasks } from "./Components/Tasks";
 import { v4 as uuidv4 } from "uuid";
+import { ITask } from "./App";
 
 export interface ITask {
   id: string;
@@ -12,8 +13,24 @@ export interface ITask {
 function App() {
   const [tasks, setTasks] = useState<ITask[]>([]);
 
+  function loadSavedTasks() {
+    const savedTasks = localStorage.getItem("@ignite:todolist");
+    if (savedTasks) {
+      setTasks(JSON.parse(savedTasks));
+    }
+  }
+
+  useEffect(() => {
+    loadSavedTasks();
+  }, []);
+
+  function setTasksAndSave(newTasks: ITask[]) {
+    setTasks(newTasks);
+    localStorage.setItem("@ignite:todolist", JSON.stringify(newTasks));
+  }
+
   function addTask(taskDescription: string) {
-    setTasks([
+    setTasksAndSave([
       ...tasks,
       {
         id: uuidv4(),
@@ -33,12 +50,12 @@ function App() {
       }
       return task;
     });
-    setTasks(newTasks);
+    setTasksAndSave(newTasks);
   }
 
   function deleteTask(taskId: string) {
     const filterTasks = tasks.filter((task) => task.id !== taskId);
-    setTasks(filterTasks);
+    setTasksAndSave(filterTasks);
   }
 
   return (
