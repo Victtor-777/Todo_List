@@ -78,3 +78,9 @@
 .header_form button:hover {
   background: var(--blue);
 }
+
+@media (max-width: 375px) {
+  html {
+    font-size: 0.75rem;
+  }
+}
