@@ -19,6 +19,13 @@ A aplicação é um controle de tarefas no estilo **to-do list**, que contém as
 - [x] Salva as tarefas no LocalStorage;
 - [x] Site com design simples e totalmente responsivo;
 
+Apesar de serem poucas as funcionalidades, foram aplicados conceitos como:
+*   Estados;
+*   Imutabilidade do estado;
+*   Listas e chaves no React Native;
+*   Propriedades;
+*   Componentização;
+
 ## 🚀 Tecnologias
 
 - [x] [NodeJS](https://nodejs.org/en/)
