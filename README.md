@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+<p>
+  <img src="./src/assets/preview.png" width="100%" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 To Do List
 
-Currently, two official plugins are available:
+Todo App foi criado para resolução do desafio do curso Ignite (trilha atualizada) da Rocketseat. Essa aplicação apesar de simples é um excelente exemplo para praticar o desenvolvimento de apps CRUD (Create, Read, Update, Delete).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Veja o projeto: [Live Preview](https://todo-list-ignite-victtor.vercel.app/)
 
-## Expanding the ESLint configuration
+## ⚙️ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+A aplicação é um controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
 
-- Configure the top-level `parserOptions` property like this:
+- [x] Adicionar uma nova tarefa;
+- [x] Marcar e desmarcar uma tarefa como concluída;
+- [x] Remover uma tarefa da listagem;
+- [x] Mostrar o progresso de conclusão das tarefas;
+- [x] Salva as tarefas no LocalStorage;
+- [x] Site com design simples e totalmente responsivo;
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🚀 Tecnologias
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [x] [NodeJS](https://nodejs.org/en/)
+- [x] [React](https://reactjs.org/)
+- [x] [Vite](https://vitejs.dev/)
+- [x] [TypeScript](https://www.typescriptlang.org/)
+- [x] [UUID (V4)](https://www.npmjs.com/package/uuidv4)
+- [x] [Phosphor Icons](https://phosphoricons.com/)
+
+## 📝 Considerações
+
+Apesar de novamente ser um projeto simples reforça e solidifica os conceitos importantes, fortalencendo a base que é super importante em qualquer aprendizado;
