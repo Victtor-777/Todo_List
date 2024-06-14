@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Header } from "./Components/Header";
 import { Tasks } from "./Components/Tasks";
-import { v4 as uuidv4 } from "uuid";
-import { ITask } from "./App";
 
 export interface ITask {
   id: string;
@@ -33,7 +31,7 @@ function App() {
     setTasksAndSave([
       ...tasks,
       {
-        id: uuidv4(),
+        id: crypto.randomUUID(),
         description: taskDescription,
         isCompleted: false,
       },
