@@ -37,4 +37,4 @@ Apesar de serem poucas as funcionalidades, foram aplicados conceitos como:
 
 ## 📝 Considerações
 
-Apesar de novamente ser um projeto simples reforça e solidifica os conceitos importantes, fortalencendo a base que é super importante em qualquer aprendizado;
+Apesar de novamente ser um projeto simples reforça e solidifica os conceitos importantes, fortalecendo a base que é super importante em qualquer aprendizado;
