@@ -28,7 +28,6 @@ Apesar de serem poucas as funcionalidades, foram aplicados conceitos como:
 
 ## 🚀 Tecnologias
 
-- [x] [NodeJS](https://nodejs.org/en/)
 - [x] [React](https://reactjs.org/)
 - [x] [Vite](https://vitejs.dev/)
 - [x] [TypeScript](https://www.typescriptlang.org/)
